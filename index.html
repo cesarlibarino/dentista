@@ -206,15 +206,24 @@
     .nav{
       display:flex;
       align-items:center;
-      justify-between:space-between;
+      justify-content:space-between;
       gap:24px;
     }
 
     .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
       font-weight:900;
       color:var(--unic-purple-dark);
       letter-spacing:-.5px;
       font-size:18px;
+    }
+
+    .brand img.brand-logo{
+      height:32px;
+      width:auto;
+      object-fit:contain;
     }
 
     .brand span{
@@ -350,7 +359,7 @@
       width:100%;
       aspect-ratio:4/5;
       object-fit:cover;
-      object-position:center top;
+      object-position:center center;
     }
 
     .floating-card{
@@ -852,7 +861,11 @@
   <header>
     <div class="container">
       <div class="nav">
-        <a href="#inicio" class="brand">Oral Unic<span> | G. Valadares</span></a>
+        <!-- MARCA COM LOGOTIPO AUTOMATIZADO INTEGRADO -->
+        <a href="#inicio" class="brand">
+          <img src="logo.jpg" alt="Logo Oral Unic" class="brand-logo">
+          Oral Unic<span> | G. Valadares</span>
+        </a>
 
         <nav class="nav-links">
           <a href="#tratamentos">Especialidades</a>
@@ -912,8 +925,8 @@
 
           <div class="portrait-wrap">
             <div class="portrait-card">
-              <!-- IMAGEM PRINCIPAL DO BANCO DE DADOS ONLINE -->
-              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600&auto=format&fit=crop" alt="Oral Unic Governador Valadares">
+              <!-- IMAGEM DA PRIMEIRA DOBRA ALTERADA PARA INFRAESTRUTURA LUXUOSA DE CONSULTÓRIO (SEM PESSOA ALEATÓRIA) -->
+              <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=600&auto=format&fit=crop" alt="Estrutura Premium Oral Unic">
             </div>
 
             <div class="floating-card">
@@ -1000,7 +1013,7 @@
           </div>
 
           <div class="image-box">
-            <!-- SEGUNDA IMAGEM DO BANCO DE DADOS ONLINE -->
+            <!-- SEGUNDA IMAGEM DE TECNOLOGIA CLÍNICA -->
             <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=600&auto=format&fit=crop" alt="Tecnologia Oral Unic">
           </div>
         </div>
@@ -1052,7 +1065,7 @@
         <div class="split">
 
           <div class="image-box">
-            <!-- TERCEIRA IMAGEM DO BANCO DE DADOS ONLINE -->
+            <!-- TERCEIRA IMAGEM: FOTO REALISTA DE EQUIPE MÉDICA/ODONTOLÓGICA PROFISSIONAL -->
             <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=600&auto=format&fit=crop" alt="Dr. Ricardo Axer Avelino">
           </div>
 
@@ -1119,7 +1132,7 @@
 
           <details>
             <summary>Como funciona o procedimento com sedação consciente?</summary>
-            <p>A sedação consciente é administrada sob supervisão profissional para induzir um estado de profundo relaxamento e bem-estar. O paciente permanece acordado e respondendo a estímulos, porém sem ansiedade, estresse ou dores corporais comuns ao medo do ambiente clínico.</p>
+            <p>A sedação consciente é administrada sob supervisão profissional para induzir um estado de profundo relaxamento e bem-estar. O pagamento do tratamento e os atos cirúrgicos ocorrem de forma tranquila, ideal para pacientes com medo ou fobia de dentista.</p>
           </details>
 
           <details>
