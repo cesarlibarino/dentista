@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Oral Unic Governador Valadares | Implantes e Estética Oral</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2 family=Fraunces:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      /* Identidade Deep Purple & Mint Luxury - Baseada na logo oficial da Oral Unic */
+      --unic-purple:#4e2249;
+      --unic-purple-dark:#31122d;
+      --unic-purple-soft:#f6edf4;
+      --unic-mint:#2ca59a;
+      --unic-mint-soft:#eef8f7;
+      --cream:#fafbfc;
+      --white:#ffffff;
+      --text:#261f25;
+      --muted:#61555f;
+      --line:rgba(78,34,73,.08);
+      --shadow:0 28px 70px rgba(78,34,73,.06);
+      --serif:'Fraunces', serif;
+      --sans:'Inter', sans-serif;
+      --transition:all .35s cubic-bezier(.25,1,.5,1);
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:var(--sans);
+      background:var(--cream);
+      color:var(--text);
+      overflow-x:hidden;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:100%;
+      max-width:1160px;
+      margin:0 auto;
+      padding:0 24px;
+    }
+
+    section{
+      position:relative;
+      padding:88px 0;
+      overflow:hidden;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      background:var(--unic-purple);
+      color:var(--white);
+      border:1px solid var(--unic-purple);
+      padding:18px 30px;
+      border-radius:999px;
+      text-transform:uppercase;
+      letter-spacing:1.1px;
+      font-size:13px;
+      font-weight:900;
+      transition:var(--transition);
+      box-shadow:0 18px 42px rgba(78,34,73,.22);
+    }
+
+    .btn:hover{
+      transform:translateY(-4px);
+      background:var(--unic-purple-dark);
+      border-color:var(--unic-purple-dark);
+      box-shadow:0 24px 52px rgba(78,34,73,.32);
+    }
+
+    .btn-secondary{
+      background:var(--white);
+      color:var(--unic-purple);
+      border-color:rgba(78,34,73,.14);
+      box-shadow:none;
+    }
+
+    .btn-secondary:hover{
+      background:var(--unic-purple-soft);
+      color:var(--unic-purple-dark);
+      box-shadow:none;
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      color:var(--unic-purple);
+      background:var(--unic-purple-soft);
+      border:1px solid rgba(78,34,73,.15);
+      padding:11px 16px;
+      border-radius:999px;
+      text-transform:uppercase;
+      letter-spacing:2.4px;
+      font-size:10px;
+      font-weight:900;
+    }
+
+    .tag::before{
+      content:"";
+      width:7px;
+      height:7px;
+      background:var(--unic-mint);
+      border-radius:999px;
+    }
+
+    .title{
+      font-family:var(--serif);
+      color:var(--unic-purple-dark);
+      font-size:56px;
+      line-height:1.02;
+      letter-spacing:-1.4px;
+      font-weight:800;
+    }
+
+    .title span{
+      color:var(--unic-mint);
+    }
+
+    .subtitle{
+      color:var(--muted);
+      font-size:17px;
+      line-height:1.7;
+      max-width:660px;
+    }
+
+    .card{
+      background:rgba(255,255,255,.85);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:0 20px 55px rgba(78,34,73,.04);
+      backdrop-filter:blur(12px);
+      transition:var(--transition);
+    }
+
+    .card:hover{
+      transform:translateY(-7px);
+      box-shadow:var(--shadow);
+      border-color:rgba(44,165,154,.45);
+    }
+
+    .blob{
+      position:absolute;
+      width:430px;
+      height:430px;
+      border-radius:999px;
+      background:rgba(44,165,154,.10);
+      filter:blur(95px);
+      pointer-events:none;
+    }
+
+    .blob.purple{
+      background:rgba(78,34,73,.06);
+    }
+
+    .center{
+      text-align:center;
+      max-width:850px;
+      margin:0 auto 54px;
+    }
+
+    .center .title{
+      margin-top:20px;
+    }
+
+    .center .subtitle{
+      margin:20px auto 0;
+    }
+
+    header{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:20;
+      padding:24px 0;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+
+    .brand{
+      font-weight:900;
+      color:var(--unic-purple-dark);
+      letter-spacing:-.5px;
+      font-size:18px;
+    }
+
+    .brand span{
+      color:var(--unic-mint);
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:26px;
+      font-size:13px;
+      color:rgba(78,34,73,.68);
+      font-weight:800;
+    }
+
+    .nav-links a:hover{
+      color:var(--unic-purple);
+    }
+
+    .nav-cta{
+      background:var(--unic-purple);
+      color:white;
+      padding:12px 18px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      transition:var(--transition);
+    }
+
+    .nav-cta:hover{
+      background:var(--unic-purple-dark);
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      padding:122px 0 72px;
+      background:
+        radial-gradient(circle at 82% 18%, rgba(44,165,154,.14), transparent 30%),
+        radial-gradient(circle at 16% 78%, rgba(78,34,73,.06), transparent 34%),
+        linear-gradient(180deg,#f6f1f5 0%, var(--cream) 100%);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:72px;
+      align-items:center;
+    }
+
+    .hero h1{
+      font-family:var(--serif);
+      font-size:68px;
+      line-height:.98;
+      letter-spacing:-2px;
+      color:var(--unic-purple-dark);
+      font-weight:800;
+      margin-top:22px;
+      max-width:760px;
+    }
+
+    .hero h1 span{
+      color:var(--unic-purple);
+    }
+
+    .hero p{
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.7;
+      margin-top:24px;
+      max-width:640px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:34px;
+    }
+
+    .hero-proof{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:40px;
+      max-width:670px;
+    }
+
+    .proof{
+      padding:18px;
+      background:rgba(255,255,255,.80);
+      border:1px solid var(--line);
+      border-radius:22px;
+    }
+
+    .proof strong{
+      color:var(--unic-purple-dark);
+      display:block;
+      font-weight:900;
+      margin-bottom:6px;
+    }
+
+    .proof span{
+      color:var(--muted);
+      font-size:12.5px;
+      line-height:1.4;
+      display:block;
+    }
+
+    .portrait-wrap{
+      position:relative;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .portrait-card{
+      position:relative;
+      width:100%;
+      max-width:420px;
+      background:white;
+      border:10px solid white;
+      border-radius:220px 220px 32px 32px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      z-index:3;
+    }
+
+    .portrait-card img{
+      width:100%;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      object-position:center top;
+    }
+
+    .floating-card{
+      position:absolute;
+      right:-20px;
+      bottom:34px;
+      z-index:5;
+      background:var(--unic-purple-dark);
+      color:white;
+      max-width:275px;
+      border-radius:28px;
+      padding:22px;
+      box-shadow:0 22px 60px rgba(78,34,73,.25);
+    }
+
+    .floating-card strong{
+      display:block;
+      font-family:var(--serif);
+      font-size:25px;
+      line-height:1.05;
+      margin-bottom:8px;
+      color:#ebdbe9;
+    }
+
+    .floating-card span{
+      display:block;
+      color:rgba(255,255,255,.74);
+      font-size:13px;
+      line-height:1.5;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+
+    .pain-card{
+      padding:34px;
+    }
+
+    .icon{
+      width:52px;
+      height:52px;
+      background:var(--unic-purple-soft);
+      border-radius:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:24px;
+      margin-bottom:24px;
+    }
+
+    .pain-card h3{
+      font-family:var(--serif);
+      color:var(--unic-purple-dark);
+      font-size:26px;
+      line-height:1.12;
+      margin-bottom:14px;
+    }
+
+    .pain-card p{
+      color:var(--muted);
+      font-size:14.5px;
+      line-height:1.65;
+    }
+
+    .section-soft{
+      background:linear-gradient(180deg,var(--unic-purple-soft),#fafbfc);
+    }
+
+    .split{
+      display:grid;
+      grid-template-columns:.95fr 1.05fr;
+      gap:74px;
+      align-items:center;
+    }
+
+    .image-box{
+      position:relative;
+      background:white;
+      border-radius:34px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      border:1px solid var(--line);
+    }
+
+    .image-box::after{
+      content:"";
+      position:absolute;
+      inset:28px -24px -24px 28px;
+      border:1px solid rgba(44,165,154,.40);
+      border-radius:34px;
+      z-index:-1;
+    }
+
+    .image-box img{
+      width:100%;
+      border-radius:26px;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      object-position:center top;
+    }
+
+    .copy .title{
+      margin-top:20px;
+    }
+
+    .copy .subtitle{
+      margin-top:20px;
+    }
+
+    .bullets{
+      display:grid;
+      gap:14px;
+      margin-top:28px;
+    }
+
+    .bullet{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.55;
+    }
+
+    .bullet b{
+      color:var(--unic-mint);
+      flex-shrink:0;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:20px;
+      margin-top:56px;
+    }
+
+    .step{
+      padding:28px;
+    }
+
+    .step strong{
+      font-family:var(--serif);
+      color:var(--unic-mint);
+      font-size:38px;
+      line-height:1;
+      display:block;
+      margin-bottom:18px;
+    }
+
+    .step h3{
+      color:var(--unic-purple-dark);
+      font-size:20px;
+      margin-bottom:10px;
+    }
+
+    .step p{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.55;
+    }
+
+    .objection{
+      background:var(--unic-purple-dark);
+      color:white;
+    }
+
+    .objection .title{
+      color:white;
+    }
+
+    .objection .title span{
+      color:#ebdbe9;
+    }
+
+    .objection .subtitle{
+      color:rgba(255,255,255,.72);
+    }
+
+    .objection-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+      margin-top:34px;
+    }
+
+    .objection-card{
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:26px;
+      padding:26px;
+    }
+
+    .objection-card h3{
+      font-size:20px;
+      margin-bottom:10px;
+      color:#ebdbe9;
+    }
+
+    .objection-card p{
+      color:rgba(255,255,255,.68);
+      font-size:14.5px;
+      line-height:1.6;
+    }
+
+    .cta{
+      background:
+        radial-gradient(circle at 50% 0%, rgba(44,165,154,.20), transparent 35%),
+        linear-gradient(180deg,#f2ebf0 0%, #fafbfc 100%);
+    }
+
+    .cta-box{
+      max-width:920px;
+      margin:0 auto;
+      background:white;
+      border-radius:38px;
+      padding:50px 38px;
+      box-shadow:var(--shadow);
+      border:1px solid var(--line);
+      text-align:center;
+    }
+
+    .cta-box .title{
+      margin-top:20px;
+    }
+
+    .cta-box .subtitle{
+      margin:22px auto 0;
+    }
+
+    .cta-box .btn{
+      margin-top:34px;
+    }
+
+    .cta-note{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .faq{
+      max-width:860px;
+      margin:0 auto;
+    }
+
+    details{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:22px;
+      margin-bottom:14px;
+      overflow:hidden;
+    }
+
+    summary{
+      list-style:none;
+      cursor:pointer;
+      padding:22px 24px;
+      font-weight:900;
+      color:var(--unic-purple-dark);
+      display:flex;
+      justify-between:space-between;
+      gap:20px;
+    }
+
+    summary::-webkit-details-marker{
+      display:none;
+    }
+
+    summary::after{
+      content:"+";
+      color:var(--unic-mint);
+      font-size:24px;
+      line-height:1;
+    }
+
+    details[open] summary::after{
+      content:"−";
+    }
+
+    details p{
+      padding:0 24px 24px;
+      color:var(--muted);
+      line-height:1.6;
+      font-size:14.5px;
+    }
+
+    footer{
+      background:#1d0b1a;
+      color:rgba(255,255,255,.60);
+      padding:50px 0 34px;
+      font-size:13px;
+    }
+
+    .footer-grid{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      padding-bottom:28px;
+      margin-bottom:24px;
+    }
+
+    .footer-brand{
+      color:white;
+      font-weight:900;
+      font-size:19px;
+      margin-bottom:8px;
+    }
+
+    .footer-links{
+      display:flex;
+      gap:24px;
+      flex-wrap:wrap;
+    }
+
+    .footer-links a:hover{
+      color:var(--unic-mint);
+    }
+
+    .footer-bottom{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      font-size:12px;
+      color:rgba(255,255,255,.45);
+    }
+
+    .credit{
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+      font-weight:900;
+      color:rgba(255,255,255,.75);
+    }
+
+    @media(max-width:1024px){
+      .nav-links{
+        display:none;
+      }
+
+      .hero{
+        min-height:auto;
+        text-align:center;
+        padding-top:112px;
+      }
+
+      .hero-grid,
+      .split{
+        grid-template-columns:1fr;
+        gap:48px;
+      }
+
+      .hero p,
+      .hero h1,
+      .subtitle{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .hero-actions{
+        justify-content:center;
+      }
+
+      .hero-proof{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .portrait-wrap{
+        order:-1;
+      }
+
+      .portrait-card{
+        max-width:330px;
+      }
+
+      .floating-card{
+        position:relative;
+        right:auto;
+        bottom:auto;
+        margin:-34px auto 0;
+        text-align:center;
+      }
+
+      .cards,
+      .steps{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .title{
+        font-size:46px;
+      }
+
+      .hero h1{
+        font-size:54px;
+      }
+
+      .image-box{
+        max-width:420px;
+        margin:0 auto;
+      }
+
+      .image-box::after{
+        display:none;
+      }
+    }
+
+    @media(max-width:768px){
+      .container{
+        padding:0 20px;
+      }
+
+      section{
+        padding:68px 0;
+      }
+
+      header{
+        padding:18px 0;
+      }
+
+      .brand{
+        font-size:16px;
+      }
+
+      .nav-cta{
+        padding:10px 13px;
+        font-size:10px;
+      }
+
+      .hero{
+        padding-top:94px;
+        padding-bottom:58px;
+      }
+
+      .portrait-card{
+        max-width:280px;
+        border-width:7px;
+      }
+
+      .hero h1{
+        font-size:41px;
+        letter-spacing:-1.2px;
+      }
+
+      .title{
+        font-size:36px;
+        letter-spacing:-.8px;
+      }
+
+      .subtitle,
+      .hero p{
+        font-size:15.5px;
+      }
+
+      .btn{
+        width:100%;
+        padding:17px 18px;
+        font-size:11px;
+      }
+
+      .hero-proof,
+      .cards,
+      .steps,
+      .objection-grid{
+        grid-template-columns:1fr;
+      }
+
+      .cta-box{
+        padding:38px 22px;
+        border-radius:30px;
+      }
+
+      .footer-grid,
+      .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .footer-links{
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a href="#inicio" class="brand">Oral Unic<span> | G. Valadares</span></a>
+
+        <nav class="nav-links">
+          <a href="#tratamentos">Especialidades</a>
+          <a href="#metodo">Tecnologia</a>
+          <a href="#sobre">O Profissional</a>
+          <a href="#duvidas">Dúvidas</a>
+        </nav>
+
+        <a href="https://wa.me/5533999442498" target="_blank" class="nav-cta">Agendar Avaliação</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+      <div class="blob" style="top:-120px;right:-120px;"></div>
+      <div class="blob purple" style="bottom:-150px;left:-160px;"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+
+          <div>
+            <span class="tag">Odontologia Premium All-in-One</span>
+
+            <h1>
+              Recupere a segurança de <span>sorrir por completo</span>.
+            </h1>
+
+            <p>
+              Referência em Implantes, Carga Imediata e Estética Orofacial em Governador Valadares. Desfrute de um atendimento cirúrgico guiado por alta tecnologia, sedação consciente e uma infraestrutura premium projetada para o seu total conforto.
+            </p>
+
+            <div class="hero-actions">
+              <a href="https://wa.me/5533999442498" target="_blank" class="btn">Agendar Minha Avaliação</a>
+              <a href="#metodo" class="btn btn-secondary">Conhecer a Estrutura</a>
+            </div>
+
+            <div class="hero-proof">
+              <div class="proof">
+                <strong>Estrutura Completa</strong>
+                <span>Centro cirúrgico e raio-x panorâmico próprio na clínica</span>
+              </div>
+
+              <div class="proof">
+                <strong>Estética Avançada</strong>
+                <span>Lentes de contato de porcelana e alinhadores invisíveis</span>
+              </div>
+
+              <div class="proof">
+                <strong>Localização Central</strong>
+                <span>Fácil acesso na Rua Israel Pinheiro, Centro</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portrait-wrap">
+            <div class="portrait-card">
+              <img src="expert.jpg" alt="Oral Unic Governador Valadares">
+            </div>
+
+            <div class="floating-card">
+              <strong>Viva a Experiência</strong>
+              <span>Transformando sorrisos com precisão científica e o acolhimento que você merece.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRATAMENTOS / PILARES -->
+    <section id="tratamentos">
+      <div class="container">
+        <div class="center">
+          <span class="tag">Conforto e Alta Tecnologia</span>
+          <h2 class="title">Tratamentos resolutivos em um <span>único lugar</span>.</h2>
+          <p class="subtitle">
+            Evite deslocamentos desnecessários. Dispomos de um ecossistema clínico completo para realizar desde exames radiográficos iniciais até cirurgias complexas sob sedação.
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="card pain-card">
+            <div class="icon">🦷</div>
+            <h3>Implantes e Carga Imediata</h3>
+            <p>
+              Reposição de dentes perdidos de forma rápida e segura, devolvendo a potência da sua mastigação e a estética do seu sorriso.
+            </p>
+          </div>
+
+          <div class="card pain-card">
+            <div class="icon">💎</div>
+            <h3>Estética e Lentes</h3>
+            <p>
+              Transformações personalizadas através de lentes de contato dentárias e facetas, corrigindo cor, formato e alinhamento com perfeição.
+            </p>
+          </div>
+
+          <div class="card pain-card">
+            <div class="icon">⚡</div>
+            <h3>Sedação Consciente</h3>
+            <p>
+              Tratamentos e procedimentos cirúrgicos realizados com tranquilidade absoluta, ideal para pacientes com medo ou fobia de dentista.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS / QUEBRA DE OBJEÇÕES -->
+    <section class="objection">
+      <div class="container">
+        <div class="split">
+          <div class="copy">
+            <span class="tag">Padrão de Excelência</span>
+            <h2 class="title">Sua saúde bucal tratada com o máximo <span>respeito e rigor</span>.</h2>
+            <p class="subtitle">
+              Ir ao dentista não precisa ser uma experiência desconfortável. O conceito Oral Unic foi minuciosamente desenvolvido para mudar a forma como você enxerga os tratamentos odontológicos.
+            </p>
+
+            <div class="objection-grid">
+              <div class="objection-card">
+                <h3>Estúdio Fotográfico</h3>
+                <p>Planejamento digital do sorriso antes mesmo de iniciar o tratamento clínico.</p>
+              </div>
+
+              <div class="objection-card">
+                <h3>Corpo Clínico Especializado</h3>
+                <p>Profissionais altamente capacitados nas mais diversas áreas da odontologia.</p>
+              </div>
+
+              <div class="objection-card">
+                <h3>Tecnologia de Ponta</h3>
+                <p>Uso de scanners intraorais que eliminam aquelas moldagens tradicionais desconfortáveis.</p>
+              </div>
+
+              <div class="objection-card">
+                <h3>Transparência Total</h3>
+                <p>Diagnósticos baseados em imagens digitais de alta definição, para você entender cada etapa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-box">
+            <img src="expert.jpg" alt="Tecnologia Oral Unic">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTODO / JORNADA DO PACIENTE -->
+    <section class="section-soft" id="metodo">
+      <div class="container">
+        <div class="center">
+          <span class="tag">A Jornada Oral Unic</span>
+          <h2 class="title">Como estruturamos a transformação do seu sorriso.</h2>
+          <p class="subtitle">
+            Um fluxo de atendimento inteligente e focado na sua segurança e satisfação em cada etapa.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="card step">
+            <strong>01</strong>
+            <h3>Avaliação Digital</h3>
+            <p>Consulta detalhada com captação de imagens e tomografia computadorizada na própria clínica.</p>
+          </div>
+
+          <div class="card step">
+            <strong>02</strong>
+            <h3>Planejamento</h3>
+            <p>Alinhamento de expectativas e desenho do plano de tratamento personalizado para o seu caso.</p>
+          </div>
+
+          <div class="card step">
+            <strong>03</strong>
+            <h3>Execução Segura</h3>
+            <p>Procedimentos executados com precisão cirúrgica, materiais nobres e opção de sedação.</p>
+          </div>
+
+          <div class="card step">
+            <strong>04</strong>
+            <h3>Manutenção</h3>
+            <p>Acompanhamento preventivo contínuo para preservar a beleza e a saúde do seu sorriso por anos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE O RESPONSÁVEL TÉCNICO -->
+    <section id="sobre">
+      <div class="container">
+        <div class="split">
+
+          <div class="image-box">
+            <img src="expert.jpg" alt="Dr. Ricardo Axer Avelino">
+          </div>
+
+          <div class="copy">
+            <span class="tag">Responsabilidade Técnica</span>
+            <h2 class="title">Dr. Ricardo Axer Avelino</h2>
+            <p class="subtitle">
+              À frente da unidade de Governador Valadares, o Dr. Ricardo lidera uma equipe multidisciplinar comprometida em entregar o conceito Premium da marca. Alinhando a solidez da franquia nacional ao atendimento caloroso e dedicado à região mineira.
+            </p>
+
+            <div class="bullets">
+              <div class="bullet"><b>✓</b> Responsável Técnico ativo e devidamente registrado: CRO/MG 32377.</div>
+              <div class="bullet"><b>✓</b> Coordenação de tratamentos complexos de reabilitação e implantes.</div>
+              <div class="bullet"><b>✓</b> Infraestrutura moderna localizada no coração do Centro da cidade.</div>
+              <div class="bullet"><b>✓</b> Foco em tecnologia odontológica aliada ao bem-estar e segurança total.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA DE FECHAMENTO -->
+    <section class="cta" id="contato">
+      <div class="container">
+        <div class="cta-box">
+          <span class="tag">Agende Pelo WhatsApp</span>
+
+          <h2 class="title">
+            Pronto para sorrir com total liberdade novamente?
+          </h2>
+
+          <p class="subtitle">
+            Clique no botão abaixo para falar diretamente com a nossa equipe de atendimento em Governador Valadares. Vamos ajudar você a escolher o melhor dia e horário para sua avaliação.
+          </p>
+
+          <a href="https://wa.me/5533999442498" target="_blank" class="btn">Solicitar Minha Consulta de Avaliação</a>
+
+          <div class="cta-note">
+            Rua Israel Pinheiro, 1890 - Centro • Governador Valadares - MG • CRO/MG 32377
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="duvidas">
+      <div class="container">
+        <div class="center">
+          <span class="tag">Dúvidas Frequentes</span>
+          <h2 class="title">Esclarecimentos Importantes</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Como funciona a Carga Imediata nos implantes?</summary>
+            <p>A técnica de carga imediata permite a colocação de uma prótese provisória fixa em até poucos dias após a inserção do implante de titânio. É indicada para casos específicos avaliados por tomografia, garantindo que o paciente não precise passar pelo período de cicatrização sem os dentes.</p>
+          </details>
+
+          <details>
+            <summary>É possível fazer os exames de imagem direto na clínica?</summary>
+            <p>Sim! A unidade conta com equipamentos modernos de diagnóstico por imagem de última geração. Você realiza seus exames radiográficos e tomográficos necessários no próprio consultório, economizando tempo e agilizando o diagnóstico.</p>
+          </details>
+
+          <details>
+            <summary>Como funciona o procedimento com sedação consciente?</summary>
+            <p>A sedação consciente é administrada sob supervisão profissional para induzir um estado de profundo relaxamento e bem-estar. O paciente permanece acordado e respondendo a estímulos, porém sem ansiedade, estresse ou dores corporais comuns ao medo do ambiente clínico.</p>
+          </details>
+
+          <details>
+            <summary>Qual o endereço exato e como faço para agendar?</summary>
+            <p>Estamos localizados na Rua Israel Pinheiro, 1890, no Centro de Governador Valadares - MG (CEP 35020-220). Para agendar, basta clicar em qualquer botão de ação desta página para abrir nosso canal oficial de triagem no WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Oral Unic Governador Valadares</div>
+          <p>Viva a Odontologia Premium. Implantes, Estética Oral e Alta Tecnologia com total conforto.</p>
+          <p style="font-size: 11px; margin-top: 5px; color: rgba(255,255,255,.35);">R.T: Dr. Ricardo Axer Avelino | CRO/MG 32377</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#inicio">Início</a>
+          <a href="#tratamentos">Especialidades</a>
+          <a href="#metodo">Tecnologia</a>
+          <a href="#contato">Agendamento</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Oral Unic Governador Valadares. Todos os direitos reservados.</p>
+        <p class="credit">Feito por DORYAN</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
