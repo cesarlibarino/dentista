@@ -206,7 +206,7 @@
     .nav{
       display:flex;
       align-items:center;
-      justify-content:space-between;
+      justify-between:space-between;
       gap:24px;
     }
 
@@ -254,7 +254,7 @@
       min-height:100vh;
       display:flex;
       align-items:center;
-      padding:122px 0 72px;
+      padding:142px 0 72px;
       background:
         radial-gradient(circle at 82% 18%, rgba(44,165,154,.14), transparent 30%),
         radial-gradient(circle at 16% 78%, rgba(78,34,73,.06), transparent 34%),
@@ -689,6 +689,7 @@
       color:rgba(255,255,255,.75);
     }
 
+    /* REESTRUTURAÇÃO COMPLETA DA VERSÃO MOBILE EXCLUSIVA */
     @media(max-width:1024px){
       .nav-links{
         display:none;
@@ -697,13 +698,20 @@
       .hero{
         min-height:auto;
         text-align:center;
-        padding-top:112px;
+        padding-top:128px;
+        padding-bottom:54px;
       }
 
-      .hero-grid,
+      .hero-grid{
+        display:flex;
+        flex-direction:column;
+        gap:40px;
+      }
+
       .split{
+        display:grid;
         grid-template-columns:1fr;
-        gap:48px;
+        gap:40px;
       }
 
       .hero p,
@@ -715,44 +723,59 @@
 
       .hero-actions{
         justify-content:center;
+        flex-direction:column;
+        gap:12px;
       }
 
       .hero-proof{
-        margin-left:auto;
-        margin-right:auto;
+        display:grid;
+        grid-template-columns:1fr;
+        gap:12px;
+        margin-top:32px;
+        max-width:100%;
       }
 
       .portrait-wrap{
-        order:-1;
+        order:2;
+        width:100%;
+        margin-top:20px;
       }
 
       .portrait-card{
-        max-width:330px;
+        max-width:320px;
+        border-radius:160px 160px 24px 24px;
+        border-width:6px;
       }
 
       .floating-card{
         position:relative;
         right:auto;
         bottom:auto;
-        margin:-34px auto 0;
+        margin:-24px auto 0;
         text-align:center;
+        z-index:10;
+        max-width:290px;
       }
 
       .cards,
       .steps{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
+        gap:16px;
       }
 
       .title{
-        font-size:46px;
+        font-size:34px;
+        letter-spacing:-0.5px;
       }
 
       .hero h1{
-        font-size:54px;
+        font-size:40px;
+        letter-spacing:-1px;
+        line-height:1.1;
       }
 
       .image-box{
-        max-width:420px;
+        max-width:100%;
         margin:0 auto;
       }
 
@@ -767,73 +790,58 @@
       }
 
       section{
-        padding:68px 0;
+        padding:58px 0;
       }
 
       header{
-        padding:18px 0;
+        padding:16px 0;
       }
 
       .brand{
-        font-size:16px;
+        font-size:15px;
       }
 
       .nav-cta{
-        padding:10px 13px;
+        padding:10px 14px;
         font-size:10px;
-      }
-
-      .hero{
-        padding-top:94px;
-        padding-bottom:58px;
-      }
-
-      .portrait-card{
-        max-width:280px;
-        border-width:7px;
-      }
-
-      .hero h1{
-        font-size:41px;
-        letter-spacing:-1.2px;
-      }
-
-      .title{
-        font-size:36px;
-        letter-spacing:-.8px;
       }
 
       .subtitle,
       .hero p{
-        font-size:15.5px;
+        font-size:15px;
+        line-height:1.6;
       }
 
       .btn{
         width:100%;
-        padding:17px 18px;
-        font-size:11px;
+        padding:16px 20px;
+        font-size:12px;
       }
 
-      .hero-proof,
-      .cards,
-      .steps,
       .objection-grid{
         grid-template-columns:1fr;
+        gap:12px;
+      }
+
+      .objection-card{
+        padding:20px;
       }
 
       .cta-box{
-        padding:38px 22px;
-        border-radius:30px;
+        padding:40px 18px;
+        border-radius:24px;
       }
 
       .footer-grid,
       .footer-bottom{
         flex-direction:column;
         text-align:center;
+        gap:24px;
       }
 
       .footer-links{
         justify-content:center;
+        gap:16px;
       }
     }
   </style>
@@ -904,7 +912,7 @@
 
           <div class="portrait-wrap">
             <div class="portrait-card">
-              <!-- PUXANDO A IMAGEM PRINCIPAL DO EXPERT DE BANCO DE DADOS ONLINE -->
+              <!-- IMAGEM PRINCIPAL DO BANCO DE DADOS ONLINE -->
               <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600&auto=format&fit=crop" alt="Oral Unic Governador Valadares">
             </div>
 
@@ -957,7 +965,7 @@
       </div>
     </section>
 
-    <!-- DIFERENCIAIS / QUEBRA DE OBJEÇÕES -->
+    <!-- DIFERENCIAIS -->
     <section class="objection">
       <div class="container">
         <div class="split">
@@ -992,14 +1000,14 @@
           </div>
 
           <div class="image-box">
-            <!-- PUXANDO A SEGUNDA IMAGEM DE CONTEXTO TECNOLÓGICO DE BANCO DE DADOS ONLINE -->
+            <!-- SEGUNDA IMAGEM DO BANCO DE DADOS ONLINE -->
             <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=600&auto=format&fit=crop" alt="Tecnologia Oral Unic">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- MÉTODO / JORNADA DO PACIENTE -->
+    <!-- JORNADA DO PACIENTE -->
     <section class="section-soft" id="metodo">
       <div class="container">
         <div class="center">
@@ -1044,7 +1052,7 @@
         <div class="split">
 
           <div class="image-box">
-            <!-- PUXANDO A TERCEIRA IMAGEM DE BANCO DE DADOS ONLINE -->
+            <!-- TERCEIRA IMAGEM DO BANCO DE DADOS ONLINE -->
             <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=600&auto=format&fit=crop" alt="Dr. Ricardo Axer Avelino">
           </div>
 
@@ -1067,7 +1075,7 @@
       </div>
     </section>
 
-    <!-- CTA DE FECHAMENTO -->
+    <!-- CTA FINAL -->
     <section class="cta" id="contato">
       <div class="container">
         <div class="cta-box">
